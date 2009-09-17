@@ -1,11 +1,11 @@
-%define        svn   1024956
+%define        svn   1025071
 %define        oname kbluetooth4
 
 Name:          kbluetooth
 Summary:       Access and control bluetooth devices in KDE4
 Version:       0.4
 Epoch:         1
-Release:       %mkrel 0.%svn.2
+Release:       %mkrel 0.%svn.1
 Source:        http://downloads.sourceforge.net/kde-bluetooth/%{name}-%{version}.%svn.tar.bz2
 URL:           http://bluetooth.kmobiletools.org/
 License:       GPLv2+
