@@ -1,4 +1,4 @@
-%define        svn   1023096
+%define        svn   1024956
 %define        oname kbluetooth4
 
 Name:          kbluetooth
@@ -36,7 +36,7 @@ receive files with just a few clicks. And that's not all you can do with it...
 #--------------------------------------------------------------------------
 
 %prep
-%setup -q -n %oname
+%setup -q -n %name
 
 %build
 %cmake_kde4
