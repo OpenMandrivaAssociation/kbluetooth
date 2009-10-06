@@ -1,13 +1,12 @@
-%define        svn   1025071
-%define        oname kbluetooth4
+%define betaver RC1
 
 Name:          kbluetooth
 Summary:       Access and control bluetooth devices in KDE4
 Version:       0.4
 Epoch:         1
-Release:       %mkrel 0.%svn.1
-Source:        http://downloads.sourceforge.net/kde-bluetooth/%{name}-%{version}.%svn.tar.bz2
-URL:           http://bluetooth.kmobiletools.org/
+Release:       %mkrel 1.%betaver.1
+Source:        http://www.kde-apps.org/CONTENT/content-files/112110-%{name}-%{betaver}.tar.bz2
+URL:           http://techbase.kde.org/Kbluetooth
 License:       GPLv2+
 Group:         System/Configuration/Hardware
 BuildRoot:     %{_tmppath}/%{name}-buildroot
@@ -25,7 +24,7 @@ into the KDE4 desktop. You can manage your local Bluetooth devices and services
 with it, browse your Bluetooth neighbourhood with konqueror and send and
 receive files with just a few clicks. And that's not all you can do with it...
 
-%files
+%files -f %name.lang
 %defattr(-,root,root)
 %{_kde_bindir}/kbluetooth
 %{_kde_bindir}/kbluetooth-inputwizard
@@ -36,7 +35,7 @@ receive files with just a few clicks. And that's not all you can do with it...
 #--------------------------------------------------------------------------
 
 %prep
-%setup -q -n %name
+%setup -q -n %{name}-%{betaver}
 
 %build
 %cmake_kde4
@@ -45,6 +44,8 @@ receive files with just a few clicks. And that's not all you can do with it...
 %install
 rm -rf %buildroot
 %makeinstall_std -C build
+
+%find_lang %name
 
 %clean
 rm -rf %buildroot
