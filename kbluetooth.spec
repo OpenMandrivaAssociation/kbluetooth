@@ -4,7 +4,7 @@ Name:          kbluetooth
 Summary:       Access and control bluetooth devices in KDE4
 Version:       0.4
 Epoch:         1
-Release:       %mkrel 1.%betaver.1
+Release:       %mkrel 1.%betaver.2
 Source:        http://www.kde-apps.org/CONTENT/content-files/112110-%{name}-%{betaver}.tar.bz2
 URL:           http://techbase.kde.org/Kbluetooth
 License:       GPLv2+
@@ -15,7 +15,9 @@ Provides:      bluez-pin
 Requires:      bluez >= 4.28 
 Requires:      bluez-sdp
 Obsoletes:     kbluetooth4 < 0.1-1
+Provides:      kbluetooth4 = %epoch:%version-%release
 Obsoletes:     kdebluetooth4 < 0.4-0.1023096.2
+Provides:      kdebluetooth4 = %epoch:%version-%release
 Obsoletes:     %{_lib}kdebluetooth0 < 1:1.0-0.beta8.9
 
 %description
