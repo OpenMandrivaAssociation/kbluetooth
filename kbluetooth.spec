@@ -16,7 +16,7 @@ Requires:      bluez >= 4.28
 Requires:      bluez-sdp
 Obsoletes:     kbluetooth4 < 0.1-1
 Provides:      kbluetooth4 = %epoch:%version-%release
-Obsoletes:     kdebluetooth4 < 0.4-0.1023096.2
+Obsoletes:     kdebluetooth4 < 1:0.4-0.1023096.2
 Provides:      kdebluetooth4 = %epoch:%version-%release
 Obsoletes:     %{_lib}kdebluetooth0 < 1:1.0-0.beta8.9
 
