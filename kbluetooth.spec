@@ -1,10 +1,11 @@
 %define betaver RC1
 %define svn    1046792
+
 Name:          kbluetooth
 Summary:       Access and control bluetooth devices in KDE4
 Version:       0.4
 Epoch:         1
-Release:       %mkrel 1.%betaver.4
+Release:       %mkrel 1.%betaver.5
 Source:        http://www.kde-apps.org/CONTENT/content-files/%name-%version.%svn.tar.bz2
 URL:           http://techbase.kde.org/Kbluetooth
 License:       GPLv2+
