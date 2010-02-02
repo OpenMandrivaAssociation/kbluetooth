@@ -1,11 +1,9 @@
-%define betaver RC2
-
 Name:          kbluetooth
 Summary:       Access and control bluetooth devices in KDE4
 Version:       0.4
 Epoch:         1
-Release:       %mkrel 1.%betaver.1
-Source0:       http://www.kde-apps.org/CONTENT/content-files/%name-%version.%betaver.tar.bz2
+Release:       %mkrel 2
+Source0:       http://opendesktop.org/CONTENT/content-files/112110-%{name}-%{version}.tar.bz2
 URL:           http://techbase.kde.org/Kbluetooth
 License:       GPLv2+
 Group:         System/Configuration/Hardware
@@ -39,7 +37,7 @@ receive files with just a few clicks. And that's not all you can do with it...
 #--------------------------------------------------------------------------
 
 %prep
-%setup -q -n %{name}-%{betaver}
+%setup -q -n %{name}-%{version}
 
 %build
 %cmake_kde4
