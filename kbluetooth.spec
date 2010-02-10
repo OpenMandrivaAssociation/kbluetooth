@@ -1,8 +1,8 @@
 Name:          kbluetooth
 Summary:       Access and control bluetooth devices in KDE4
-Version:       0.4
+Version:       0.4.1
 Epoch:         1
-Release:       %mkrel 2
+Release:       %mkrel 1
 Source0:       http://opendesktop.org/CONTENT/content-files/112110-%{name}-%{version}.tar.bz2
 URL:           http://techbase.kde.org/Kbluetooth
 License:       GPLv2+
