@@ -1,0 +1,14 @@
+Index: src/agent/passkeydialog.ui
+===================================================================
+--- src/agent/passkeydialog.ui  (révision 1106660)
++++ src/agent/passkeydialog.ui  (copie de travail)
+@@ -10,7 +10,7 @@
+    </rect>
+   </property>
+   <property name="windowTitle" >
+-   <string>Dialog</string>
++   <string>Choose a PIN code</string>
+   </property>
+   <layout class="QVBoxLayout" >
+    <item>
+
