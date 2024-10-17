@@ -5,7 +5,7 @@ Epoch:         1
 Release:       %mkrel 3
 Source0:       http://opendesktop.org/CONTENT/content-files/112110-%{name}-%{version}.tar.bz2
 Patch0:        kbluetooth-0.4.2-t1106667-fix-windowname.patch
-URL:           http://techbase.kde.org/Kbluetooth
+URL:           https://techbase.kde.org/Kbluetooth
 License:       GPLv2+
 Group:         System/Configuration/Hardware
 BuildRoot:     %{_tmppath}/%{name}-buildroot
