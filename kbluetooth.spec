@@ -9,6 +9,7 @@ URL:           https://techbase.kde.org/Kbluetooth
 License:       GPLv2+
 Group:         System/Configuration/Hardware
 BuildRoot:     %{_tmppath}/%{name}-buildroot
+BuildRequires:	make
 BuildRequires: kdebase4-workspace-devel >= 2:4.2.0
 Provides:      bluez-pin
 Requires:      bluez >= 4.28 
